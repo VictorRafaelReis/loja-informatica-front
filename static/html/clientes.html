@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Loja de Informática</title>
+</head>
+<body>
+    
+    <div class="container">
+ 
+        <section class="header">
+        </section>
+        
+        <section class="logo">
+            <img src="../img/logo_pc.png" class="img-logo" alt="logo de um computador">
+            <h1 class="titulo">Gerenciamento de Clientes</h1>
+        </section>
+ 
+        <section class="menu-section">
+            <nav class="menu">
+                <div class="itens-menu">
+                    <a href="clientes.html">Clientes</a>
+                    <a href="index.html">Produtos</a>
+                    <a href="vendas.html">Vendas</a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="btn-adicao">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-add-cliente">Adicionar Cliente</button>
+        </section>
+        
+        <section class="adicionar-cliente">
+            <div class="modal fade" id="modal-add-cliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" 
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Adicionar Cliente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form form-group formulario-adicao">
+                                <label for="newCliente" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="newCliente">
+                                <label for="newTelefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="newTelefone">
+                                <label for="newEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="newEmail">
+                                <label for="newCpf">CPF</label>
+                                <input type="text" class="form-control" id="newCpf">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="newItemCliente()">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="atualizar-cliente">
+            <div class="modal fade" id="modal-att-cliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" 
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Atualizar Cliente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form form-group formulario-atualizacao">
+                                <label for="attCliente" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="attCliente">
+                                <label for="attTelefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="attTelefone">
+                                <label for="attEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="attEmail">
+                                <label for="attCpf">CPF</label>
+                                <input type="text" class="form-control" id="attCpf">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" id="btn-att-cliente" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-busca">
+            <div class="div-busca">
+                <input id="input-busca" type="text" class="form-control" placeholder="Qual Venda você procura? (id)">
+                <i class="fa fa-search icone-busca" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <!-- Tabela com clientes existentes -->
+        <section class="items clientes-existentes">
+            <table id="myTable" class="table table-secondary table-striped table-bordered border-light">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>CPF</th>
+                        <th id="th-opcoes-cliente">Opções</th>
+                        <!--<th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>-->
+                    </tr>
+                </thead>
+                <tbody id="tabela-clientes">
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../js/cliente_scripts.js"></script>
+</body>
+</html>
