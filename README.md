@@ -7,11 +7,14 @@
       Assim faz-se necessário seguir os passos descritos em loja-informatica-back-end.
 
   2 - Realizado o procedimento acima, será necessário clonar este repositório, para que tenha acesso aos seus arquivos e pastas.
-      2.1 - git clone https://github.com/VictorRafaelReis/loja-informatica-front.git
+  
+    2.1 - git clone https://github.com/VictorRafaelReis/loja-informatica-front.git
 
   3 - uma vez clonado o repositório, execute a página index.html em seu navegador para ter acesso ao projeto.
+      
       3.1 - Uma forma de execução é por meio do terminal, utilizando o comando "python -m http.server 9000".
             Após executado o comando, em seu navegador de preferência colar a seguinte url, "http://127.0.0.1:9000/static/html/index.html"
+      
       3.2 - Outra forma de execução é, caso utilize o editor vscode, uma forma mais prática de execução é por meio da extensão Live Server,
             onde é necessário apenas abrir o arquivo .html desejado e clicar na opção "Go Live" no canto inferior direito da tela.
 
