@@ -4,7 +4,7 @@
 
 # Instalação e Configuração:
   1 - Para que este front-end funcione normalmente será necessária a instalação e configuração da sua API back-end.
-      Assim faz-se necessário seguir os passos descritos em loja-informatica-back-end.
+      Assim faz-se necessário seguir os passos descritos em [loja-informatica-back-end](https://github.com/VictorRafaelReis/loja-informatica-api).
 
   2 - Realizado o procedimento acima, será necessário clonar este repositório, para que tenha acesso aos seus arquivos e pastas.
   
